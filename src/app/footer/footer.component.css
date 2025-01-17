@@ -1,0 +1,19 @@
+.down-footer{
+    background-color: #1a252f;
+    color:white; 
+}
+
+.upper-footer{
+    color: white;
+    background-color: var(--second-color);
+}
+
+.socail-icons .s-icon {
+    border: 1px solid white;
+    padding: 0.5rem;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}

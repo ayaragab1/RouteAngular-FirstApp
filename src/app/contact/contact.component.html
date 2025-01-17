@@ -1,0 +1,50 @@
+<section
+    class="contact-section py-5 ">
+    <div class="container">
+        <div class="h-100 ">
+
+
+            <div class="heading-container ">
+                <h1 class="fs-1 text-uppercase fw-bold heading-with-decoration">
+                    Contact component
+                </h1>
+                <div class="decoration">
+                    <span class="line"></span>
+                    <span class="star">★</span>
+                    <span class="line"></span>
+                </div>
+            </div>
+            <div class="form-wrapper row  gy-3 col-md-7 m-auto">
+                <div class="data mb-3">
+                  @if(labelVisibility['userName']){
+                    <label for="userName" class="form-label animate__animated animate__fadeInUp " >User Name</label>
+                  }
+                    <input type="text" class="form-control" placeholder="User Name" id="userName" (input)="showLabel('userName')">
+                  </div>
+                  <div class="mb-3">
+                  @if(labelVisibility['userAge']){
+
+                    <label for="userAge" class="form-label animate__animated animate__fadeInUp ">User Age</label>
+                  }
+                    <input type="text" class="form-control" placeholder="User Age" id="userAge"  (input)="showLabel('userAge')">
+                  </div>
+                  <div class="mb-3">
+                    @if(labelVisibility['userEmail']){
+                      <label for="userEmail" class="form-label animate__animated animate__fadeInUp ">User Email</label>
+                    }
+                    <input type="email" class="form-control" placeholder="User Email" id="userEmail"  (input)="showLabel('userEmail')">
+                  </div>
+                  <div class="mb-3">
+                    @if(labelVisibility['userPassword']){
+                      <label for="userPassword" class="form-label animate__animated animate__fadeInUp ">User Password</label>
+                    }
+                    <input type="password" class="form-control" placeholder="User Password" id="userPassword"  (input)="showLabel('userPassword')">
+                  </div>
+
+                  <div class="text-center">
+                    <button type="button" class="btn send-btn">Send Message </button>
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>

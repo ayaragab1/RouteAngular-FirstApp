@@ -1,0 +1,13 @@
+.navbar{
+    background-color: var(--second-color);
+}
+
+.active{
+    background-color: var(--main-color);
+    padding: 8px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}

@@ -1,0 +1,29 @@
+.decoration .line {
+  background-color: var(--second-color);
+}
+
+.decoration .star,
+h1 {
+  color: var(--second-color);
+}
+input{
+    border: none;
+    border-bottom: 1px solid #00000036;
+}
+
+.send-btn{
+    background-color: var(--main-color);
+    color: white;
+}
+
+.form-control:focus {
+    border-color: #00000036;
+    box-shadow: 0 0 0 0;
+}
+
+
+.form-wrapper label{
+  color: var(--main-color);
+  font-size: 14px;
+}
+

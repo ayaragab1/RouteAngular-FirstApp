@@ -1,0 +1,109 @@
+<section
+    class="portfolio-section py-5 d-flex justify-content-center align-content-center  flex-column text-center text-white">
+    <div class="container">
+        <div class="h-100 ">
+
+
+            <div class="heading-container ">
+                <h1 class="fs-1 text-uppercase fw-bold heading-with-decoration">
+                    Portfolio component
+                </h1>
+                <div class="decoration">
+                    <span class="line"></span>
+                    <span class="star">★</span>
+                    <span class="line"></span>
+                </div>
+            </div>
+            <div class="row mt-2 g-5">
+                <div class="col-md-4">
+                    <div>
+                        <div class="card image-hover-card">
+                            <img src="/images/poert1.png" class="card-img-top" alt="Image Example">
+                            <div class="hover-overlay" (click)="openPopup('/images/poert1.png')">
+                                <div class="icon">
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <div class="card image-hover-card">
+                            <img src="/images/port2.png" class="card-img-top" alt="Image Example">
+                            <div class="hover-overlay" (click)="openPopup('/images/port2.png')">
+                                <div class="icon">
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <div class="card image-hover-card">
+                            <img src="/images/port3.png" class="card-img-top" alt="Image Example">
+                            <div class="hover-overlay" (click)="openPopup('/images/port3.png')">
+                                <div class="icon">
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <div class="card image-hover-card">
+                            <img src="/images/poert1.png" class="card-img-top" alt="Image Example">
+                            <div class="hover-overlay" (click)="openPopup('/images/poert1.png')">
+                                <div class="icon">
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <div class="card image-hover-card">
+                            <img src="/images/port2.png" class="card-img-top" alt="Image Example">
+                            <div class="hover-overlay" (click)="openPopup('/images/port2.png')">
+                                <div class="icon">
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <div class="card image-hover-card">
+                            <img src="/images/port3.png" class="card-img-top" alt="Image Example">
+                            <div class="hover-overlay" (click)="openPopup('/images/port3.png')">
+                                <div class="icon">
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+@if(isPopupOpen){
+    <div  (click)="closePopup($event)" class="position-fixed start-0 w-100 top-0 h-100 bg-primary bg-opacity-25 d-flex justify-content-center align-items-center" >
+        <img  class="modal-img" alt="Selected Img" [src]="selectedImage" (click)="$event.stopPropagation()">
+    </div>
+    }
+
+
+
+</section>
